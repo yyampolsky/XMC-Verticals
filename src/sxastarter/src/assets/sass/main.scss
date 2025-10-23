@@ -2,3 +2,65 @@
 @import 'components';
 @import 'variants';
 @import 'app';
+@import "tailwindcss";
+@layer base {
+    :root {
+      --background: 210 33% 99%;          /* very light cool gray-blue */
+      --foreground: 210 15% 10%;          /* dark navy-gray text */
+      
+      /* Surfaces */
+      --card: 0 0% 100%;
+      --card-foreground: 210 15% 10%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 210 15% 10%;
+      
+      /* Primary blues */
+      --primary: 217 90% 45%;             /* rich blue (≈ #1D4ED8) */
+      --primary-foreground: 210 40% 98%;  /* near-white for contrast */
+      
+      /* Secondary and supporting */
+      --secondary: 210 100% 96%;          /* pale light-blue (≈ #E0F2FE) */
+      --secondary-foreground: 217 90% 30%; /* medium blue text */
+      
+      /* Muted and accents */
+      --muted: 210 20% 94%;               /* soft neutral blue-gray */
+      --muted-foreground: 210 10% 40%;    /* muted text */
+      --accent: 199 100% 90%;             /* light aqua accent */
+      --accent-foreground: 217 90% 25%;   /* deeper blue for legibility */
+      
+      /* Destructive / alerts */
+      --destructive: 0 84.2% 60.2%;       /* red */
+      --destructive-foreground: 0 0% 98%; /* white text */
+      
+      /* Borders & UI lines */
+      --border: 210 20% 88%;
+      --input: 210 20% 88%;
+      --ring: 217 90% 45%;
+      
+      /* Radii */
+      --radius: 0.5rem;
+    }
+  
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
+  }
+
