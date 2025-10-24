@@ -70,6 +70,41 @@
   }
 }
 
+// Myriad Genetics
+.site-myriad-genetics {
+  --text-body: #1a3d5c;
+  --text-body-inverted: #fff;
+  --text-colored: #0066b3;
+  --text-footer: #1a3d5c;
+  --text-accent: #00a651;
+  --bg-body: #f5f9fc;
+  --bg-footer: #e8f2f7;
+  --bg-main: #ffffff;
+  --bg-color: #0066b3;
+  --bg-saturated: #00a651;
+  --bg-accent: #ff8c00;
+  --border-color: #b8d4e8;
+  --hr-color: #e8f2f7;
+  --roundness: 0.375rem;
+
+  .dark & {
+    --text-body: #e8f2f7;
+    --text-body-inverted: #1a3d5c;
+    --text-colored: #4da6ff;
+    --text-footer: #e8f2f7;
+    --text-accent: #33d17a;
+    --bg-body: #0d1b2a;
+    --bg-footer: #1a2b3d;
+    --bg-main: #162838;
+    --bg-color: #0066b3;
+    --bg-saturated: #00a651;
+    --bg-accent: #ffa500;
+    --border-color: #2d4a5f;
+    --hr-color: #2d4a5f;
+    --roundness: 0.375rem;
+  }
+}
+
 // Backgrounds colors
 $bg-transparent: transparent !default;
 $bg-basic-color: var(--bg-body) !default;

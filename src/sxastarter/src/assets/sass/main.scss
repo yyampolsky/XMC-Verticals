@@ -63,4 +63,23 @@
       --ring: 0 0% 83.1%;
     }
   }
+  .link-list.list-horizontal {
+    display: flex;
+    justify-content: space-evenly; // or space-around
+    align-items: center;
+    width: 100%;
+  
+    h3 {
+      background: $bg-basic-color;
+      padding: 3px 5px;
+    }
+  
+    a {
+      border: none;
+    }
+  
+    li {
+      display: inline-block;
+    }
+  }
 
