@@ -21,7 +21,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   );
 };
 
-export const WithLogin = (props: ComponentProps): JSX.Element => {
+export const WithLogin = (props: WithImageProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   return (
@@ -29,7 +29,7 @@ export const WithLogin = (props: ComponentProps): JSX.Element => {
       <div className={`container container-${props.params?.ContainerWidth?.toLowerCase()}-fluid`}>
         <div className="row align-items-center">
           <div className="col-auto">
-            <Placeholder name="header-left" rendering={props.rendering} />
+            <NextImage field={props.fields.LogoImage} width={200} height={50} />
           </div>
           <div className="col">
             <Placeholder name="header-right" rendering={props.rendering} />
