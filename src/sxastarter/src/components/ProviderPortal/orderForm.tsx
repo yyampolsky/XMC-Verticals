@@ -153,7 +153,7 @@ export default function OrderForm() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground">Patient Notification Sheet</span>
-              <select className="text-sm border border-border rounded px-3 py-1">
+              <select className="text-sm border border-border rounded px-3 py-1 bg-white">
                 <option>Default (Patient Pay)</option>
                 <option>Insurance Billing</option>
                 <option>Self Pay</option>
@@ -220,7 +220,7 @@ export default function OrderForm() {
                     id="clinic"
                     value={formData.clinic}
                     onChange={(e) => handleInputChange('clinic', e.target.value)}
-                    className="border border-border rounded px-3 py-2 w-full"
+                    className="border border-border rounded px-3 py-2 w-full bg-white"
                   >
                     <option value="">Select clinic...</option>
                     {clinics.map((clinic) => (
@@ -239,7 +239,7 @@ export default function OrderForm() {
                     id="clinician"
                     value={formData.clinician}
                     onChange={(e) => handleInputChange('clinician', e.target.value)}
-                    className="border border-border rounded px-3 py-2 w-full"
+                    className="border border-border rounded px-3 py-2 w-full bg-white"
                   >
                     <option value="">Select clinician...</option>
                     {clinicians.map((clinician) => (
@@ -260,6 +260,7 @@ export default function OrderForm() {
                       placeholder="(optional)"
                       value={formData.clinicReference}
                       onChange={(e) => handleInputChange('clinicReference', e.target.value)}
+                      className="bg-white"
                     />
                     <Info className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   </div>
@@ -279,11 +280,13 @@ export default function OrderForm() {
                         placeholder="First Name"
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
+                        className="bg-white"
                       />
                       <Input
                         placeholder="Last Name"
                         value={formData.lastName}
                         onChange={(e) => handleInputChange('lastName', e.target.value)}
+                        className="bg-white"
                       />
                     </div>
                     <p className="text-xs text-muted-foreground">
@@ -303,7 +306,7 @@ export default function OrderForm() {
                       placeholder="mm/dd/yyyy"
                       value={formData.dob}
                       onChange={(e) => handleInputChange('dob', e.target.value)}
-                      className="max-w-xs"
+                      className="max-w-xs bg-white"
                     />
                   </div>
                 </div>
@@ -340,6 +343,7 @@ export default function OrderForm() {
                       placeholder="Example: 123 Main St."
                       value={formData.address}
                       onChange={(e) => handleInputChange('address', e.target.value)}
+                      className="bg-white"
                     />
                     <Button
                       variant="link"
@@ -360,7 +364,7 @@ export default function OrderForm() {
                     placeholder="(optional)"
                     value={formData.aptSte}
                     onChange={(e) => handleInputChange('aptSte', e.target.value)}
-                    className="max-w-xs"
+                    className="max-w-xs bg-white"
                   />
                 </div>
 
@@ -373,7 +377,7 @@ export default function OrderForm() {
                     placeholder="mobile preferred"
                     value={formData.phone}
                     onChange={(e) => handleInputChange('phone', e.target.value)}
-                    className="max-w-xs"
+                    className="max-w-xs bg-white"
                   />
                 </div>
 
@@ -387,6 +391,7 @@ export default function OrderForm() {
                     placeholder="(optional)"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
+                    className="bg-white"
                   />
                 </div>
 
@@ -427,6 +432,7 @@ export default function OrderForm() {
                       placeholder="(optional)"
                       value={formData.fedexTracking}
                       onChange={(e) => handleInputChange('fedexTracking', e.target.value)}
+                      className="bg-white"
                     />
                     <Info className="w-4 h-4 text-cyan-600 flex-shrink-0" />
                   </div>
@@ -450,7 +456,7 @@ export default function OrderForm() {
                     id="insuranceProvider"
                     value={formData.insuranceProvider}
                     onChange={(e) => handleInputChange('insuranceProvider', e.target.value)}
-                    className="border border-border rounded px-3 py-2 w-full"
+                    className="border border-border rounded px-3 py-2 w-full bg-white"
                   >
                     <option value="">Select insurance provider...</option>
                     {insuranceProviders.map((provider) => (
@@ -470,6 +476,7 @@ export default function OrderForm() {
                     placeholder="Enter policy number"
                     value={formData.policyNumber}
                     onChange={(e) => handleInputChange('policyNumber', e.target.value)}
+                    className="bg-white"
                   />
                 </div>
 
@@ -482,6 +489,7 @@ export default function OrderForm() {
                     placeholder="Enter group number (if applicable)"
                     value={formData.groupNumber}
                     onChange={(e) => handleInputChange('groupNumber', e.target.value)}
+                    className="bg-white"
                   />
                 </div>
 
@@ -494,6 +502,7 @@ export default function OrderForm() {
                     placeholder="Name of policy holder"
                     value={formData.subscriberName}
                     onChange={(e) => handleInputChange('subscriberName', e.target.value)}
+                    className="bg-white"
                   />
                 </div>
 
@@ -507,7 +516,7 @@ export default function OrderForm() {
                     placeholder="mm/dd/yyyy"
                     value={formData.subscriberDob}
                     onChange={(e) => handleInputChange('subscriberDob', e.target.value)}
-                    className="max-w-xs"
+                    className="max-w-xs bg-white"
                   />
                 </div>
 
@@ -519,7 +528,7 @@ export default function OrderForm() {
                     id="relationshipToPatient"
                     value={formData.relationshipToPatient}
                     onChange={(e) => handleInputChange('relationshipToPatient', e.target.value)}
-                    className="border border-border rounded px-3 py-2 max-w-xs"
+                    className="border border-border rounded px-3 py-2 max-w-xs bg-white"
                   >
                     <option value="">Select relationship...</option>
                     <option value="self">Self</option>
@@ -561,7 +570,7 @@ export default function OrderForm() {
                     id="testType"
                     value={formData.testType}
                     onChange={(e) => handleInputChange('testType', e.target.value)}
-                    className="border border-border rounded px-3 py-2 w-full"
+                    className="border border-border rounded px-3 py-2 w-full bg-white"
                   >
                     <option value="">Select test type...</option>
                     {testTypes.map((test) => (
@@ -659,7 +668,7 @@ export default function OrderForm() {
                         placeholder="mm/dd/yyyy"
                         value={formData.sampleDate}
                         onChange={(e) => handleInputChange('sampleDate', e.target.value)}
-                        className="max-w-xs"
+                        className="max-w-xs bg-white"
                       />
                     </div>
 
@@ -672,6 +681,7 @@ export default function OrderForm() {
                         placeholder="Enter sample barcode"
                         value={formData.barcode}
                         onChange={(e) => handleInputChange('barcode', e.target.value)}
+                        className="bg-white"
                       />
                     </div>
                   </>
@@ -698,6 +708,7 @@ export default function OrderForm() {
                     placeholder="Dr. First Last"
                     value={formData.physicianName}
                     onChange={(e) => handleInputChange('physicianName', e.target.value)}
+                    className="bg-white"
                   />
                 </div>
 
@@ -710,7 +721,7 @@ export default function OrderForm() {
                     placeholder="10-digit NPI"
                     value={formData.physicianNpi}
                     onChange={(e) => handleInputChange('physicianNpi', e.target.value)}
-                    className="max-w-xs"
+                    className="max-w-xs bg-white"
                   />
                 </div>
 
@@ -723,7 +734,7 @@ export default function OrderForm() {
                     placeholder="(555) 555-5555"
                     value={formData.physicianPhone}
                     onChange={(e) => handleInputChange('physicianPhone', e.target.value)}
-                    className="max-w-xs"
+                    className="max-w-xs bg-white"
                   />
                 </div>
               </div>
@@ -740,7 +751,7 @@ export default function OrderForm() {
                     id="billingType"
                     value={formData.billingType}
                     onChange={(e) => handleInputChange('billingType', e.target.value)}
-                    className="border border-border rounded px-3 py-2 max-w-xs"
+                    className="border border-border rounded px-3 py-2 max-w-xs bg-white"
                   >
                     <option value="">Select billing type...</option>
                     <option value="patient">Patient Pay</option>
@@ -758,7 +769,7 @@ export default function OrderForm() {
                     placeholder="Enter any special instructions or notes..."
                     value={formData.specialInstructions}
                     onChange={(e) => handleInputChange('specialInstructions', e.target.value)}
-                    className="border border-border rounded px-3 py-2 w-full min-h-[100px]"
+                    className="border border-border rounded px-3 py-2 w-full min-h-[100px] bg-white"
                   />
                 </div>
               </div>
@@ -770,7 +781,7 @@ export default function OrderForm() {
                 <div className="text-sm text-amber-900">
                   <p className="font-medium mb-1">Review Before Submitting</p>
                   <p>
-                    Please review all information carefully before placing your order. Click [next]
+                    Please review all information carefully before placing your order. Click [Next]
                     to continue.
                   </p>
                 </div>
@@ -883,7 +894,7 @@ export default function OrderForm() {
                 <div className="text-sm text-green-900">
                   <p className="font-medium mb-1">Ready to Submit</p>
                   <p>
-                    Your order is ready to be submitted. Click the Submit button below to complete
+                    Your order is ready to be submitted. Click the [Submit Order] button below to
                     complete the process.
                   </p>
                 </div>
