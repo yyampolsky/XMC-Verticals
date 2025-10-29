@@ -83,3 +83,30 @@ export const Short = (props: AppPromoProps): JSX.Element => {
     </div>
   );
 };
+export const NoImage = (props: AppPromoProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+  const isPageEditing = sitecoreContext.pageEditing;
+
+  return (
+    <div className={`component hero ${props.params.styles.trimEnd()}`} id={id ? id : undefined}>
+      <div className="container content-container">
+        <div className="top-layout">
+          <div className="title">
+            <Text field={props.fields.Title} />
+          </div>
+          <div className="subtitle">
+            <RichText field={props.fields.Text} />
+          </div>
+        </div>
+        <div className="bottom-layout">
+          <div className="btn-array">
+            {(isPageEditing || props.fields?.Link?.value?.href) && (
+              <Link field={props.fields.Link} className="button button-main mt-3" />
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
